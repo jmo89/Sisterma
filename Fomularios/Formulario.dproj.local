@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/09/18 18:00:13.000.754,=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/09/18 18:00:38.000.997,C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Fomularios\Menu.pas=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/09/18 18:00:38.000.997,C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Fomularios\Menu.dfm=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/09/18 18:00:49.000.966,C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Fomularios\Formulario.dproj=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/09/18 18:18:12.000.822,=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Fomularios\Unit1.pas</Transaction>
+    <Transaction>2024/09/18 18:24:59.000.993,C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Fomularios\U_texto.pas=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Fomularios\Unit1.pas</Transaction>
+    <Transaction>2024/09/18 18:24:59.000.993,C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Fomularios\U_texto.dfm=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Fomularios\Unit1.dfm</Transaction>
+    <Transaction>2024/09/18 18:29:25.000.335,=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Fomularios\Unit1.pas</Transaction>
+    <Transaction>2024/09/18 18:31:10.000.213,C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Fomularios\U_imagem.dfm=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Fomularios\Unit1.dfm</Transaction>
+    <Transaction>2024/09/18 18:31:10.000.213,C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Fomularios\U_imagem.pas=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Fomularios\Unit1.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Menu.pas"/>
+    <File Path="Menu.dfm"/>
+    <File Path="U_imagem.pas"/>
+    <File Path="U_imagem.dfm"/>
+    <File Path="U_texto.pas"/>
+    <File Path="U_texto.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

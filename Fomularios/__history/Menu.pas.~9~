@@ -1,0 +1,44 @@
+unit Menu;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls;
+
+type
+  Tfrm_menu = class(TForm)
+    MainMenu1: TMainMenu;
+    Arquivo: TMenuItem;
+    Abrir1: TMenuItem;
+    Salvar1: TMenuItem;
+    Fechar1: TMenuItem;
+    Editar1: TMenuItem;
+    Janelas1: TMenuItem;
+    Sair1: TMenuItem;
+    exto1: TMenuItem;
+    Imagem1: TMenuItem;
+    btn_texto: TButton;
+    btn_imagem: TButton;
+    procedure btn_textoClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frm_menu: Tfrm_menu;
+
+implementation
+
+{$R *.dfm}
+
+uses U_imagem, U_texto;
+
+procedure Tfrm_menu.btn_textoClick(Sender: TObject);
+begin
+  frm_texto.Show;
+end;
+
+end.

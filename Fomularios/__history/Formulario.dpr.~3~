@@ -1,0 +1,16 @@
+program Formulario;
+
+uses
+  Vcl.Forms,
+  Menu in 'Menu.pas' {frm_menu},
+  U_texto in 'U_texto.pas' {frm_texto};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(Tfrm_menu, frm_menu);
+  Application.CreateForm(Tfrm_texto, frm_texto);
+  Application.Run;
+end.

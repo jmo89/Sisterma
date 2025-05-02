@@ -1,0 +1,20 @@
+object frm_imagem: Tfrm_imagem
+  Left = 0
+  Top = 0
+  Caption = 'frm_imagem'
+  ClientHeight = 297
+  ClientWidth = 504
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Image1: TImage
+    Left = 0
+    Top = 8
+    Width = 496
+    Height = 289
+  end
+end

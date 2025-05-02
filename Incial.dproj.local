@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/08/05 13:16:28.000.548,=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/08/05 13:17:03.000.500,C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\ProjetoInicial.dfm=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/08/05 13:17:03.000.500,C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\ProjetoInicial.pas=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/08/05 13:18:33.000.400,=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/08/05 13:20:05.000.803,C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\inicial.pas=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2024/08/05 13:20:05.000.803,C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\inicial.dfm=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+    <Transaction>2024/08/05 13:20:24.000.980,C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Incial.dproj=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

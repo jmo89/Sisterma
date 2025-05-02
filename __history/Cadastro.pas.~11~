@@ -1,0 +1,47 @@
+unit Cadastro;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TuCadastro = class(TForm)
+    Edit1: TEdit;
+    Memo1: TMemo;
+    procedure Edit1Click(Sender: TObject);
+    procedure Memo1Change(Sender: TObject);
+    procedure Edit1Change(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  uCadastro: TuCadastro;
+
+implementation
+
+// TODO: eSSA
+{$R *.dfm}
+
+
+
+procedure TuCadastro.Edit1Click(Sender: TObject);
+
+var x:Integer;
+begin
+
+x:= 10 * 10;
+Edit1.TEdit:-x.ToString();
+end;
+
+procedure TuCadastro.Memo1Change(Sender: TObject);
+begin
+ShowMEssage('Click do Memo');
+end;
+
+end.
