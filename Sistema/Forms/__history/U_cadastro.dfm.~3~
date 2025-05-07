@@ -1,0 +1,159 @@
+object frm_cadastro: Tfrm_cadastro
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro de Contatos'
+  ClientHeight = 441
+  ClientWidth = 624
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Label1: TLabel
+    Left = 96
+    Top = 24
+    Width = 68
+    Height = 15
+    Caption = 'ID_CONTATO'
+    FocusControl = DBEdit1
+  end
+  object Label2: TLabel
+    Left = 96
+    Top = 72
+    Width = 35
+    Height = 15
+    Caption = 'NOME'
+    FocusControl = DBEdit2
+  end
+  object Label3: TLabel
+    Left = 96
+    Top = 120
+    Width = 54
+    Height = 15
+    Caption = 'TELEFONE'
+    FocusControl = DBEdit3
+  end
+  object Label4: TLabel
+    Left = 331
+    Top = 120
+    Width = 49
+    Height = 15
+    Caption = 'CELULAR'
+    FocusControl = DBEdit4
+  end
+  object Label5: TLabel
+    Left = 96
+    Top = 165
+    Width = 34
+    Height = 15
+    Caption = 'EMAIL'
+    FocusControl = DBEdit5
+  end
+  object DBEdit1: TDBEdit
+    Left = 96
+    Top = 40
+    Width = 154
+    Height = 23
+    DataField = 'ID_CONTATO'
+    DataSource = Ds_cadastro
+    TabOrder = 0
+  end
+  object DBEdit2: TDBEdit
+    Left = 96
+    Top = 88
+    Width = 464
+    Height = 23
+    DataField = 'NOME'
+    DataSource = Ds_cadastro
+    TabOrder = 1
+  end
+  object DBEdit3: TDBEdit
+    Left = 96
+    Top = 136
+    Width = 229
+    Height = 23
+    DataField = 'TELEFONE'
+    DataSource = Ds_cadastro
+    TabOrder = 2
+  end
+  object DBEdit4: TDBEdit
+    Left = 331
+    Top = 136
+    Width = 229
+    Height = 23
+    DataField = 'CELULAR'
+    DataSource = Ds_cadastro
+    TabOrder = 3
+  end
+  object DBEdit5: TDBEdit
+    Left = 96
+    Top = 181
+    Width = 464
+    Height = 23
+    DataField = 'EMAIL'
+    DataSource = Ds_cadastro
+    TabOrder = 4
+  end
+  object Conexao: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\joelo\OneDrive\Documentos\Embarcadero\Studio\P' +
+        'rojects\Sistema\Exe\Banco\CONTATO.FDB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'Protocol=TCPIP'
+      'Server=localhost'
+      'Port=3050'
+      'CharacterSet=WIN1252'
+      'DriverID=FB')
+    Connected = True
+    LoginPrompt = False
+    Left = 24
+    Top = 24
+  end
+  object Q_cadastro: TFDQuery
+    Connection = Conexao
+    SQL.Strings = (
+      'select * from CONTATO'
+      'order by ID_CONTATO')
+    Left = 24
+    Top = 88
+    object Q_cadastroID_CONTATO: TIntegerField
+      FieldName = 'ID_CONTATO'
+      Origin = 'ID_CONTATO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object Q_cadastroNOME: TStringField
+      FieldName = 'NOME'
+      Origin = 'NOME'
+      Required = True
+      Size = 100
+    end
+    object Q_cadastroTELEFONE: TStringField
+      FieldName = 'TELEFONE'
+      Origin = 'TELEFONE'
+      Required = True
+      Size = 15
+    end
+    object Q_cadastroCELULAR: TStringField
+      FieldName = 'CELULAR'
+      Origin = 'CELULAR'
+      Required = True
+      Size = 15
+    end
+    object Q_cadastroEMAIL: TStringField
+      FieldName = 'EMAIL'
+      Origin = 'EMAIL'
+      Required = True
+      Size = 100
+    end
+  end
+  object Ds_cadastro: TDataSource
+    DataSet = Q_cadastro
+    Left = 24
+    Top = 152
+  end
+end

@@ -3,98 +3,221 @@ object frm_cadastro: Tfrm_cadastro
   Top = 0
   Caption = 'Cadastro de Contatos'
   ClientHeight = 441
-  ClientWidth = 624
+  ClientWidth = 686
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  Position = poScreenCenter
   TextHeight = 15
   object Label1: TLabel
-    Left = 96
-    Top = 24
-    Width = 68
+    Left = 88
+    Top = 88
+    Width = 72
     Height = 15
     Caption = 'ID_CONTATO'
     FocusControl = DBEdit1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label2: TLabel
-    Left = 96
-    Top = 72
+    Left = 88
+    Top = 136
     Width = 35
     Height = 15
     Caption = 'NOME'
     FocusControl = DBEdit2
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label3: TLabel
-    Left = 96
-    Top = 120
-    Width = 54
+    Left = 88
+    Top = 184
+    Width = 55
     Height = 15
     Caption = 'TELEFONE'
     FocusControl = DBEdit3
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label4: TLabel
-    Left = 331
-    Top = 120
-    Width = 49
+    Left = 323
+    Top = 184
+    Width = 50
     Height = 15
     Caption = 'CELULAR'
     FocusControl = DBEdit4
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label5: TLabel
-    Left = 96
-    Top = 165
-    Width = 34
+    Left = 88
+    Top = 229
+    Width = 35
     Height = 15
     Caption = 'EMAIL'
     FocusControl = DBEdit5
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object DBEdit1: TDBEdit
-    Left = 96
-    Top = 40
+    Left = 88
+    Top = 104
     Width = 154
     Height = 23
+    CharCase = ecUpperCase
     DataField = 'ID_CONTATO'
     DataSource = Ds_cadastro
     TabOrder = 0
   end
   object DBEdit2: TDBEdit
-    Left = 96
-    Top = 88
+    Left = 88
+    Top = 152
     Width = 464
     Height = 23
+    CharCase = ecUpperCase
     DataField = 'NOME'
     DataSource = Ds_cadastro
     TabOrder = 1
   end
   object DBEdit3: TDBEdit
-    Left = 96
-    Top = 136
+    Left = 88
+    Top = 200
     Width = 229
     Height = 23
+    CharCase = ecUpperCase
     DataField = 'TELEFONE'
     DataSource = Ds_cadastro
+    MaxLength = 13
     TabOrder = 2
   end
   object DBEdit4: TDBEdit
-    Left = 331
-    Top = 136
+    Left = 323
+    Top = 200
     Width = 229
     Height = 23
+    CharCase = ecUpperCase
     DataField = 'CELULAR'
     DataSource = Ds_cadastro
+    MaxLength = 15
     TabOrder = 3
   end
   object DBEdit5: TDBEdit
-    Left = 96
-    Top = 181
+    Left = 88
+    Top = 245
     Width = 464
     Height = 23
+    CharCase = ecUpperCase
     DataField = 'EMAIL'
     DataSource = Ds_cadastro
     TabOrder = 4
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 686
+    Height = 57
+    Align = alTop
+    Color = clGradientActiveCaption
+    ParentBackground = False
+    TabOrder = 5
+    ExplicitWidth = 624
+    object bt_novo: TButton
+      Left = 8
+      Top = 7
+      Width = 90
+      Height = 45
+      Caption = '&Novo'
+      TabOrder = 0
+    end
+    object bt_editar: TButton
+      Left = 104
+      Top = 7
+      Width = 90
+      Height = 45
+      Caption = '&Editar'
+      TabOrder = 1
+    end
+    object bt_deletar: TButton
+      Left = 200
+      Top = 7
+      Width = 90
+      Height = 45
+      Caption = '&Deletar'
+      TabOrder = 2
+    end
+    object bt_gravar: TButton
+      Left = 296
+      Top = 7
+      Width = 90
+      Height = 45
+      Caption = '&Gravar'
+      TabOrder = 3
+    end
+    object bt_cancelar: TButton
+      Left = 392
+      Top = 7
+      Width = 90
+      Height = 45
+      Caption = '&Cancelar'
+      TabOrder = 4
+    end
+    object bt_atualizar: TButton
+      Left = 488
+      Top = 7
+      Width = 90
+      Height = 45
+      Caption = '&Atualizar'
+      TabOrder = 5
+    end
+    object bt_sair: TButton
+      Left = 584
+      Top = 7
+      Width = 90
+      Height = 45
+      Caption = '&Sair'
+      TabOrder = 6
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 392
+    Width = 686
+    Height = 49
+    Align = alBottom
+    Color = clGradientActiveCaption
+    ParentBackground = False
+    TabOrder = 6
+    object DBNavigator1: TDBNavigator
+      Left = 88
+      Top = 8
+      Width = 460
+      Height = 33
+      DataSource = Ds_cadastro
+      TabOrder = 0
+    end
   end
   object Conexao: TFDConnection
     Params.Strings = (
@@ -111,15 +234,16 @@ object frm_cadastro: Tfrm_cadastro
     Connected = True
     LoginPrompt = False
     Left = 24
-    Top = 24
+    Top = 88
   end
   object Q_cadastro: TFDQuery
+    Active = True
     Connection = Conexao
     SQL.Strings = (
       'select * from CONTATO'
       'order by ID_CONTATO')
     Left = 24
-    Top = 88
+    Top = 152
     object Q_cadastroID_CONTATO: TIntegerField
       FieldName = 'ID_CONTATO'
       Origin = 'ID_CONTATO'
@@ -136,12 +260,14 @@ object frm_cadastro: Tfrm_cadastro
       FieldName = 'TELEFONE'
       Origin = 'TELEFONE'
       Required = True
+      EditMask = '!\(99\)0000-0000;0;_'
       Size = 15
     end
     object Q_cadastroCELULAR: TStringField
       FieldName = 'CELULAR'
       Origin = 'CELULAR'
       Required = True
+      EditMask = '!\(99\)0-0000-0000;0;_'
       Size = 15
     end
     object Q_cadastroEMAIL: TStringField
@@ -154,6 +280,6 @@ object frm_cadastro: Tfrm_cadastro
   object Ds_cadastro: TDataSource
     DataSet = Q_cadastro
     Left = 24
-    Top = 152
+    Top = 216
   end
 end

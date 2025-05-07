@@ -9,7 +9,8 @@ uses
   FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.FB,
   FireDAC.Phys.FBDef, FireDAC.VCLUI.Wait, FireDAC.Stan.Param, FireDAC.DatS,
   FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, FireDAC.Comp.DataSet,
-  FireDAC.Comp.Client, Vcl.StdCtrls, Vcl.Mask, Vcl.ExtCtrls, Vcl.DBCtrls;
+  FireDAC.Comp.Client, Vcl.StdCtrls, Vcl.Mask, Vcl.ExtCtrls, Vcl.DBCtrls,
+  Vcl.Buttons;
 
 type
   Tfrm_cadastro = class(TForm)
@@ -31,6 +32,16 @@ type
     DBEdit4: TDBEdit;
     Label5: TLabel;
     DBEdit5: TDBEdit;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    bt_novo: TButton;
+    bt_editar: TButton;
+    bt_deletar: TButton;
+    bt_gravar: TButton;
+    bt_cancelar: TButton;
+    bt_atualizar: TButton;
+    bt_sair: TButton;
+    DBNavigator1: TDBNavigator;
   private
     { Private declarations }
   public
