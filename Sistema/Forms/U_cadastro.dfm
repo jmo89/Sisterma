@@ -11,6 +11,7 @@ object frm_cadastro: Tfrm_cadastro
   Font.Name = 'Segoe UI'
   Font.Style = []
   Position = poScreenCenter
+  Visible = True
   TextHeight = 15
   object Label1: TLabel
     Left = 88
@@ -110,7 +111,6 @@ object frm_cadastro: Tfrm_cadastro
     CharCase = ecUpperCase
     DataField = 'TELEFONE'
     DataSource = Ds_cadastro
-    MaxLength = 13
     TabOrder = 2
   end
   object DBEdit4: TDBEdit
@@ -121,7 +121,6 @@ object frm_cadastro: Tfrm_cadastro
     CharCase = ecUpperCase
     DataField = 'CELULAR'
     DataSource = Ds_cadastro
-    MaxLength = 15
     TabOrder = 3
   end
   object DBEdit5: TDBEdit
@@ -143,7 +142,6 @@ object frm_cadastro: Tfrm_cadastro
     Color = clGradientActiveCaption
     ParentBackground = False
     TabOrder = 5
-    ExplicitWidth = 624
     object bt_novo: TButton
       Left = 8
       Top = 7
@@ -237,7 +235,6 @@ object frm_cadastro: Tfrm_cadastro
     Top = 88
   end
   object Q_cadastro: TFDQuery
-    Active = True
     Connection = Conexao
     SQL.Strings = (
       'select * from CONTATO'
